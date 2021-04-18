@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+.btn-group button {
+  background-color: #4CAF50; /* Зеленый фон */
+  border: 1px solid green; /* Зеленый border */
+  color: white; /* Белый текст */
+  padding: 10px 24px; /* Немного отступа */
+  cursor: pointer; /* Указатель/значок руки */
+  float: left; /* Плавают кнопки бок о бок */
+}
+
+/* Очистить поплавки (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /*Предотвращение двойных границ */
+}
+
+/* Добавление цвета фона при наведение курсора */
+.btn-group button:hover {
+	background-color: #3e8e41;
+}
+</style>
+<body>
+<h1>Выровненная группа кнопок</h1>
+
+<p>Две кнопки в группе:</p>
+<div class="btn-group" style="width:100%">
+	<button style="width:50%">Apple</button>
+	<button style="width:50%">Sony</button>
+</div>
+
+<p>Три кнопки в группе:</p>
+<div class="btn-group" style="width:100%">
+	<button style="width:33.3%">Apple</button>
+	<button style="width:33.3%">Samsung</button>
+	<button style="width:33.3%">Sony</button>
+</div>
+
+<p>Четыре кнопки в группе:</p>
+<div class="btn-group" style="width:100%">
+	<button style="width:25%">Apple</button>
+	<button style="width:25%">Samsung</button>
+	<button style="width:25%">Sony</button>
+	<button style="width:25%">HTC</button>
+</div>
+
+</body>
+</html>

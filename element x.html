@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getElement(){
+	var x = document.getElementsByName("x");document.getElementById("demo").innerHTML = x.length;
+}
+</script>
+</head>
+<body>
+<h2>Отобразить количество элементов с определенным именем</h2>
+
+<p>
+<input type="button" onclic="getElement()"value="Сколько элементов названо x?">
+</p>
+
+<p id="demo"></p>
+
+</body>
+</html>
